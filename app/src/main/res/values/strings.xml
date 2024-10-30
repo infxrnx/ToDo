@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">guessgame</string>
+    <string name="image_desc">Описание изображения</string>
+    <string name="full_image_desc">Полное изображение</string>
+</resources>
