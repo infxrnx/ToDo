@@ -40,6 +40,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("androidx.work:work-runtime-ktx:2.8.0")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation("com.squareup.okhttp3:okhttp:4.9.1")

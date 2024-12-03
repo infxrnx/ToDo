@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="priority_options">
+        <item>Все</item>
+        <item>Высокий</item>
+        <item>Средний</item>
+        <item>Низкий</item>
+    </string-array>
+
+    <string-array name="status_options">
+        <item>Все</item>
+        <item>Выполненные</item>
+        <item>Не выполненные</item>
+    </string-array>
+</resources>

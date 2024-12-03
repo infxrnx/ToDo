@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Поле для ввода названия задачи -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:inputType="text" />
+
+    <!-- Поле для ввода описания задачи -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top" />
+
+    <!-- Поле для ввода приоритета задачи -->
+    <EditText
+        android:id="@+id/editTextTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Priority"
+        android:inputType="text" />
+
+    <!-- Поле для ввода даты задачи -->
+    <EditText
+        android:id="@+id/editTextTaskDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Deadline (yyyy-MM-dd)"
+        android:inputType="date" />
+
+    <!-- Поле для ввода времени задачи -->
+    <EditText
+        android:id="@+id/editTextTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Time (HH:mm)"
+        android:inputType="time" />
+
+</LinearLayout>

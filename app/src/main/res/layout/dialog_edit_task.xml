@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText для заголовка задачи -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:inputType="text" />
+
+    <!-- EditText для описания задачи -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="text" />
+
+    <!-- EditText для приоритета -->
+    <EditText
+        android:id="@+id/editTextTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Priority"
+        android:inputType="text" />
+
+    <!-- EditText для ввода даты -->
+    <EditText
+        android:id="@+id/editTextTaskDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Deadline"
+        android:inputType="date"
+        android:clickable="true" />
+
+    <!-- EditText для ввода времени -->
+    <EditText
+        android:id="@+id/editTextTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Time"
+        android:inputType="time"
+        android:clickable="true" />
+
+</LinearLayout>
