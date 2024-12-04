@@ -6,6 +6,12 @@ plugins {
 android {
     namespace = "com.example.guessgame"
     compileSdk = 34
+    android.ndkVersion = "28.0.12674087"
+    externalNativeBuild {
+        cmake {
+            path = file("/src/main/cpp/CMakeLists.txt") // Путь к CMakeLists.txt
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.guessgame"
@@ -13,7 +19,6 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

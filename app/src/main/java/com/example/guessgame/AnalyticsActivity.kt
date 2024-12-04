@@ -15,9 +15,7 @@ class AnalyticsActivity : AppCompatActivity() {
         val totalTasks = intent.getIntExtra("totalTasks", 0)
         val completedTasks = intent.getIntExtra("completedTasks", 0)
         val remainingTasks = totalTasks - completedTasks
-        val completionRate = if (totalTasks > 0) {
-            (completedTasks.toFloat() / totalTasks * 100).toInt()
-        } else 0
+        val completionRate = CompletionRateCalculator.calculateCompletionRate(completedTasks, totalTasks);
 
         findViewById<TextView>(R.id.totalTasksView).text = "Total Tasks: $totalTasks"
         findViewById<TextView>(R.id.completedTasksView).text = "Completed Tasks: $completedTasks"
